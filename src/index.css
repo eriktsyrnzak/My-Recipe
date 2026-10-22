@@ -1,0 +1,20 @@
+:root {
+  --orange: #f07f00;
+  --orange-light: #f59330;
+  --header-bg: #666666;
+  --page-dark: #4d4d4d;
+  --footer-bg: #cccccc;
+  --card-brown: #8d6a3c;
+  --text: #111111;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--text);
+  background: #fff;
+}
+
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }

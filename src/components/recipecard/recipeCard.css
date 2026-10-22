@@ -1,0 +1,26 @@
+.card {
+  border: 3px solid var(--text);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.imageBox {
+  aspect-ratio: 4 / 3;
+  background: #e6dccb;
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 4px 8px 4px 4px;
+}
+.title { font-family: Georgia, serif; font-size: 15px; }
+
+.bookmark {
+  border: 0;
+  background: none;
+  color: var(--orange);
+  cursor: pointer;
+}
+.bookmark:hover { color: var(--text); }
