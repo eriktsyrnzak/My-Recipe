@@ -6,7 +6,7 @@ import Recipe from './pages/Recipe/recipe.jsx';
 import Login from './pages/Login/login.jsx';
 
 
-const currentPage = 'home';
+const currentPage = 'catalog';
 
 const pages = {
   home: <Home />,
