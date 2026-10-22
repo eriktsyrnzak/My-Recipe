@@ -8,11 +8,27 @@
   font-size: 13px;
   font-weight: 600;
 }
-.links { list-style: none; display: grid; gap: 4px; }
+.links {
+  list-style: none;
+  display: grid;
+  gap: 4px;
+}
 
-.social { text-align: center; }
-.icons { display: flex; gap: 18px; justify-content: center; margin-top: 6px; color: var(--text); }
+.social {
+  text-align: center;
+}
+.icons {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 6px;
+  color: var(--text);
+}
 
 @media (max-width: 720px) {
-  .footer { flex-direction: column; padding: 20px; text-align: center; }
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
 }

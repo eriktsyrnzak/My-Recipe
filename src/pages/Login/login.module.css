@@ -14,9 +14,17 @@
   background: #e8e8e8;
   border: 3px solid #555;
 }
-.title { text-align: center; font-size: 40px; font-weight: 400; }
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
 
-.field { display: flex; flex-direction: column; gap: 4px; }
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 .input {
   width: 100%;
   padding: 10px 14px;
@@ -25,12 +33,29 @@
   background: #fff;
   font-size: 15px;
 }
-.input:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+.input:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 2px;
+}
 
-.small { align-self: flex-start; padding-left: 14px; font-size: 11px; color: #2a3f9a; cursor: pointer; }
+.small {
+  align-self: flex-start;
+  padding-left: 14px;
+  font-size: 11px;
+  color: #2a3f9a;
+  cursor: pointer;
+}
 
-.actions { display: flex; flex-direction: column; align-items: center; gap: 2px; }
-.actions .small { align-self: center; padding: 0; }
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.actions .small {
+  align-self: center;
+  padding: 0;
+}
 .button {
   width: 120px;
   padding: 3px 0;
@@ -39,4 +64,7 @@
   background: #fff;
   cursor: pointer;
 }
-.button:hover { background: var(--orange); color: #fff; }
+.button:hover {
+  background: var(--orange);
+  color: #fff;
+}

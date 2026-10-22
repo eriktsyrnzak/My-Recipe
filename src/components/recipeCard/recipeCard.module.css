@@ -15,7 +15,10 @@
   align-items: flex-end;
   padding: 4px 8px 4px 4px;
 }
-.title { font-family: Georgia, serif; font-size: 15px; }
+.title {
+  font-family: Georgia, serif;
+  font-size: 15px;
+}
 
 .bookmark {
   border: 0;
@@ -23,4 +26,6 @@
   color: var(--orange);
   cursor: pointer;
 }
-.bookmark:hover { color: var(--text); }
+.bookmark:hover {
+  color: var(--text);
+}

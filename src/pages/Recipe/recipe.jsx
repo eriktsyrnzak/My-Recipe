@@ -2,7 +2,13 @@ import Rating from '../../components/rating/rating.jsx';
 import { recipes } from '../../data/recipes.js';
 import styles from './recipe.module.css';
 
-const ingredients = ['Борошно — 200 г', 'Молоко — 400 мл', 'Яйця — 2 шт.', 'Цукор — 2 ст. л.', 'Олія — 2 ст. л.'];
+const ingredients = [
+  'Борошно — 200 г',
+  'Молоко — 400 мл',
+  'Яйця — 2 шт.',
+  'Цукор — 2 ст. л.',
+  'Олія — 2 ст. л.',
+];
 const steps = [
   'Змішайте яйця з цукром і молоком.',
   'Поступово додайте борошно та олію, розмішайте до гладкості.',
@@ -22,14 +28,18 @@ export default function Recipe() {
           <Rating value={recipe.rating} />
           <h2 className={styles.h2}>Інгредієнти</h2>
           <ul className={styles.list}>
-            {ingredients.map((i) => <li key={i}>{i}</li>)}
+            {ingredients.map((i) => (
+              <li key={i}>{i}</li>
+            ))}
           </ul>
         </div>
       </div>
 
       <h2 className={styles.h2}>Приготування</h2>
       <ol className={styles.steps}>
-        {steps.map((s) => <li key={s}>{s}</li>)}
+        {steps.map((s) => (
+          <li key={s}>{s}</li>
+        ))}
       </ol>
     </section>
   );

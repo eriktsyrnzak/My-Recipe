@@ -14,7 +14,9 @@ export default function Home() {
             placeholder="Назва страви або інгредієнти"
             aria-label="Пошук рецептів"
           />
-          <button type="button" className={styles.button}>Пошук</button>
+          <button type="button" className={styles.button}>
+            Пошук
+          </button>
         </div>
       </section>
 

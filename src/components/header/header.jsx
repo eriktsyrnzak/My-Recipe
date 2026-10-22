@@ -18,10 +18,14 @@ export default function Header({ active }) {
         <span className={cls('catalog')}>Рецепти</span>
 
         <div className={styles.dropdown}>
-          <span className={styles.link} tabIndex={0}>Категорія</span>
+          <span className={styles.link} tabIndex={0}>
+            Категорія
+          </span>
           <ul className={styles.menu}>
             {categories.map((name) => (
-              <li key={name} className={styles.menuItem}>{name}</li>
+              <li key={name} className={styles.menuItem}>
+                {name}
+              </li>
             ))}
           </ul>
         </div>

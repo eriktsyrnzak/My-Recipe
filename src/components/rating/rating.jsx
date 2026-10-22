@@ -8,7 +8,9 @@ export default function Rating({ value = 0, max = 5 }) {
         return (
           <span key={i} className={styles.star}>
             ☆
-            <span className={styles.fill} style={{ width: `${fill * 100}%` }}>★</span>
+            <span className={styles.fill} style={{ width: `${fill * 100}%` }}>
+              ★
+            </span>
           </span>
         );
       })}

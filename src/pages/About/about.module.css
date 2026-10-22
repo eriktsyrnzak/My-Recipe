@@ -5,7 +5,11 @@
   background: var(--orange);
   color: #fff;
 }
-.hero h1 { font-family: Georgia, serif; font-size: clamp(32px, 6vw, 52px); font-weight: 400; }
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 6vw, 52px);
+  font-weight: 400;
+}
 
 .story {
   min-height: 300px;
@@ -13,8 +17,17 @@
   background: var(--page-dark);
   color: #fff;
 }
-.story h2 { font-size: 24px; font-weight: 400; margin-bottom: 8px; }
-.story p { max-width: 460px; font-size: 14px; line-height: 1.5; color: #ddd; }
+.story h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.story p {
+  max-width: 460px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ddd;
+}
 
 .stats {
   display: flex;
@@ -33,5 +46,10 @@
   border-radius: 14px;
   background: var(--card-brown);
 }
-.stat strong { font-size: 24px; color: var(--orange); }
-.stat span { font-size: 14px; }
+.stat strong {
+  font-size: 24px;
+  color: var(--orange);
+}
+.stat span {
+  font-size: 14px;
+}
