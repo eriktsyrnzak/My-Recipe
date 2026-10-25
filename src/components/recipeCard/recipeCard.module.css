@@ -5,6 +5,7 @@
   background: #fff;
 }
 .imageBox {
+  display: block;
   aspect-ratio: 4 / 3;
   background: #e6dccb;
 }

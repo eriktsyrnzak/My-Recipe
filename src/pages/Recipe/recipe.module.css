@@ -36,3 +36,13 @@
     grid-template-columns: 1fr;
   }
 }
+
+.back {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--orange);
+}
+
+.back:hover {
+  text-decoration: underline;
+}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import styles from './login.module.css';
 
 export default function Login() {
@@ -26,6 +27,10 @@ export default function Login() {
           </button>
           <span className={styles.small}>register</span>
         </div>
+
+        <Link to="/" className={styles.back}>
+          ← На головну
+        </Link>
       </form>
     </div>
   );

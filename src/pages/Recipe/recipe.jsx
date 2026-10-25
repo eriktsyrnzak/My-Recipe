@@ -1,3 +1,4 @@
+import { Link, useParams } from 'react-router';
 import Rating from '../../components/rating/rating.jsx';
 import { recipes } from '../../data/recipes.js';
 import styles from './recipe.module.css';
@@ -17,10 +18,26 @@ const steps = [
 ];
 
 export default function Recipe() {
-  const recipe = recipes[0];
+  const { id } = useParams();
+  const recipe = recipes.find((r) => String(r.id) === id);
+
+  if (!recipe) {
+    return (
+      <section className={styles.page}>
+        <h1>Рецепт не знайдено</h1>
+        <Link to="/catalog" className={styles.back}>
+          До списку рецептів
+        </Link>
+      </section>
+    );
+  }
 
   return (
     <section className={styles.page}>
+      <Link to="/catalog" className={styles.back}>
+        ← До списку рецептів
+      </Link>
+
       <div className={styles.top}>
         <div className={styles.image} style={{ background: recipe.color }} />
         <div>

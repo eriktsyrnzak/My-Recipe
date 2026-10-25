@@ -1,21 +1,23 @@
+import { Link, NavLink } from 'react-router';
 import { categories } from '../../data/recipes.js';
 import styles from './header.module.css';
 
-export default function Header({ active }) {
-  const cls = (key) =>
-    active === key || (key === 'catalog' && active === 'recipe')
-      ? `${styles.link} ${styles.active}`
-      : styles.link;
+const navClass = ({ isActive }) => (isActive ? `${styles.link} ${styles.active}` : styles.link);
 
+export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
+      <Link to="/" className={styles.logo}>
         <span className={styles.logoMy}>My</span>Recipe
-      </div>
+      </Link>
 
       <nav className={styles.nav}>
-        <span className={cls('home')}>Головна</span>
-        <span className={cls('catalog')}>Рецепти</span>
+        <NavLink to="/" end className={navClass}>
+          Головна
+        </NavLink>
+        <NavLink to="/catalog" className={navClass}>
+          Рецепти
+        </NavLink>
 
         <div className={styles.dropdown}>
           <span className={styles.link} tabIndex={0}>
@@ -23,17 +25,23 @@ export default function Header({ active }) {
           </span>
           <ul className={styles.menu}>
             {categories.map((name) => (
-              <li key={name} className={styles.menuItem}>
-                {name}
+              <li key={name}>
+                <Link to="/catalog" className={styles.menuItem}>
+                  {name}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
 
-        <span className={cls('about')}>Про нас</span>
+        <NavLink to="/about" className={navClass}>
+          Про нас
+        </NavLink>
       </nav>
 
-      <span className={styles.auth}>Вхід/Реєстрація</span>
+      <Link to="/login" className={styles.auth}>
+        Вхід/Реєстрація
+      </Link>
     </header>
   );
 }

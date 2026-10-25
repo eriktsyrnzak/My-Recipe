@@ -1,10 +1,16 @@
+import { Link } from 'react-router';
 import Rating from '../rating/rating.jsx';
 import styles from './recipeCard.module.css';
 
-export default function RecipeCard({ title, rating, color }) {
+export default function RecipeCard({ id, title, rating, color }) {
   return (
     <article className={styles.card}>
-      <div className={styles.imageBox} style={{ background: color }} />
+      <Link
+        to={`/recipe/${id}`}
+        className={styles.imageBox}
+        style={{ background: color }}
+        aria-label={title}
+      />
       <div className={styles.caption}>
         <div>
           <h3 className={styles.title}>{title}</h3>
